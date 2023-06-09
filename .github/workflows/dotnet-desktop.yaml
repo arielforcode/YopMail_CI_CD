@@ -1,0 +1,68 @@
+name: dotnet package
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['6.0.x']
+
+    steps:
+      - name: Checkout código fuente
+        uses: actions/checkout@v2
+
+      - name: Configurar .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+      - name: Instalar dependencias
+        run: dotnet restore
+
+      - name: Instalar Chrome browser
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          google-chrome-stable --headless --disable-gpu
+
+      - name: Establecer permisos de archivo chromedriver
+        run: sudo chmod +x ./YopMail_CI_CD/src/resources/driver
+
+      - name: Compilar
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Ejecutar casos de prueba de Selenium
+        run: dotnet test --no-restore --verbosity normal
+
+      - name: Publicar resultados de pruebas de Selenium
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './YopMail_CI_CD/bin/Debug/net6.0/allure-results'
+          keep_files: true
+          user_name: arielforcode
+          user_email: angelarielcamargomamani@gmail.com
+          publish_branch: gh-pages
+
+      - name: Acción de generación de informe de Allure
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        id: allure-report
+        with:
+          allure_results: './YopMail_CI_CD/bin/Debug/net6.0/allure-results'
+          gh_pages: gh-pages
+          allure_report: allure-report
+
+      - name: Desplegar informe en Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-report 
