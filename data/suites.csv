@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 09 22:54:10 GMT 2023","Fri Jun 09 22:54:14 GMT 2023","3784","","","","","","Log in web page of post office YopMail",""
+"passed","Fri Jun 09 22:54:19 GMT 2023","Fri Jun 09 22:54:19 GMT 2023","259","","","","","","Verify arrival of mail in the mailbox",""
+"passed","Fri Jun 09 22:54:14 GMT 2023","Fri Jun 09 22:54:19 GMT 2023","4639","","","","","","Send email",""
