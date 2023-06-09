@@ -1,0 +1,79 @@
+{
+  "uuid": "9347e94e58b041f9b626302a80b75f3f",
+  "historyId": "Verify arrival of mail in the mailbox",
+  "fullName": "Verify arrival of mail in the mailbox",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ARIELFORCODE"
+    },
+    {
+      "name": "feature",
+      "value": "TestYopMail"
+    }
+  ],
+  "links": [],
+  "name": "Verify arrival of mail in the mailbox",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  Switch to Inbox Section",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686350450122,
+      "stop": 1686350450997
+    },
+    {
+      "name": "When  Check mail sent in the mailbox",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686350450997,
+      "stop": 1686350451057
+    },
+    {
+      "name": "Then  Close browser",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686350451057,
+      "stop": 1686350451097
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686350450122,
+  "stop": 1686350451098
+}
