@@ -1,0 +1,79 @@
+{
+  "uuid": "f8d67ad629b34d4ea91481406954f91a",
+  "historyId": "Send email",
+  "fullName": "Send email",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az309-59"
+    },
+    {
+      "name": "feature",
+      "value": "TestYopMail"
+    }
+  ],
+  "links": [],
+  "name": "Send email",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  Open Mail Screen",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686351254538,
+      "stop": 1686351254708
+    },
+    {
+      "name": "When  Write Email to send",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686351254708,
+      "stop": 1686351255152
+    },
+    {
+      "name": "Then  Check mail delivery",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686351255153,
+      "stop": 1686351259177
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686351254538,
+  "stop": 1686351259177
+}
