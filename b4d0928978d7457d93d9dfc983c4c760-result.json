@@ -1,0 +1,79 @@
+{
+  "uuid": "2bfedf7e2a4449d687c6c9fe0b180f6a",
+  "historyId": "Log in web page of post office YopMail",
+  "fullName": "Log in web page of post office YopMail",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az979-164"
+    },
+    {
+      "name": "feature",
+      "value": "TestYopMail"
+    }
+  ],
+  "links": [],
+  "name": "Log in web page of post office YopMail",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the website",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716504691886,
+      "stop": 1716504696199
+    },
+    {
+      "name": "When  Create user",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716504696199,
+      "stop": 1716504697528
+    },
+    {
+      "name": "Then  I see the control panel",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1716504697529,
+      "stop": 1716504697552
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1716504691876,
+  "stop": 1716504697553
+}
