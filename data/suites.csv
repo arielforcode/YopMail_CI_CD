@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu May 23 21:17:46 GMT 2024","Thu May 23 21:17:49 GMT 2024","2698","","","","","","Log in web page of post office YopMail",""
-"failed","Thu May 23 21:17:49 GMT 2024","Thu May 23 21:17:50 GMT 2024","1115","","","","","","Send email",""
-"failed","Thu May 23 21:17:50 GMT 2024","Thu May 23 21:17:51 GMT 2024","1078","","","","","","Verify arrival of mail in the mailbox",""
+"failed","Thu May 23 22:51:37 GMT 2024","Thu May 23 22:51:38 GMT 2024","1108","","","","","","Send email",""
+"failed","Thu May 23 22:51:38 GMT 2024","Thu May 23 22:51:39 GMT 2024","1074","","","","","","Verify arrival of mail in the mailbox",""
+"passed","Thu May 23 22:51:31 GMT 2024","Thu May 23 22:51:37 GMT 2024","5677","","","","","","Log in web page of post office YopMail",""
